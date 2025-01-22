@@ -30,8 +30,8 @@ const createCheckoutSession = async (req, res) => {
       'card',
     ],    line_items: singleLineItem,
     mode: 'payment',
-    success_url: 'http://localhost:3000/payment-success?session_id={CHECKOUT_SESSION_ID}',
-    cancel_url: 'http://localhost:3000/payment-failed?session_id={CHECKOUT_SESSION_ID}',
+    success_url: 'https://shop-co-frontend-chi.vercel.app/payment-success?session_id={CHECKOUT_SESSION_ID}',
+    cancel_url: 'https://shop-co-frontend-chi.vercel.app/payment-failed?session_id={CHECKOUT_SESSION_ID}',
   });
 
 
