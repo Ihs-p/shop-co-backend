@@ -12,7 +12,7 @@ app.use(express.json());
 
 // CORS Configuration
 app.use(cors({
-  origin: ['https://shop-co-frontend-chi.vercel.app','http://localhost:3000'], // Your client URL
+  origin: ['https://shop-co-frontend-chi.vercel.app'], // Your client URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
